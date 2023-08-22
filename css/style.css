@@ -1,3 +1,19 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/*
+MAIN COLOR : red
+GREY COLOR :#343a40
+
+*/
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -15,11 +31,18 @@ body{
     color: #555;
 }
 
+.section-hero{
+    background-color: #ffcccc;
+    padding: 9.6rem 0;
+}
+
 .hero{
     max-width: 130rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
 }
 
 .heading-primary {
@@ -27,13 +50,64 @@ body{
     font-weight: 700;
     line-height: 1.05;
     color: black;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
 }
 
 .hero-description{
     font-size: 2rem;
     line-height: 1.5;
+    margin-bottom: 4.8rem;
 }
+
+.btn:link, 
+.btn:visited{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    text-decoration: none;
+
+    /*how to create animations */
+    /*creating animations for links 
+     by putting transition on its original "state" */
+    transition: all 0.5s;
+}
+
+.btn-one:link,
+.btn-one:visited
+{
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn-one:hover,
+.btn-one:active
+{
+    background-color: #b30000;
+}
+
+
+.btn-two:link,
+.btn-two:visited{
+    background-color: white;
+    color: red;
+}
+
+.btn-two:hover,
+.btn-two:active
+{
+    background-color: #eee6e0;
+
+    /* Trick to adding border inside when making a box invisible */
+    box-shadow: inset 0 0 0 3px white;
+}
+
 
 .hero-img{
     width: 100%;
+}
+
+.margin-right-sm{
+    margin-right: 1.6rem;
 }
