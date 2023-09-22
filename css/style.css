@@ -250,6 +250,11 @@ strong{
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols{ 
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
 .grid---center-v{
     align-items: center;
 }
@@ -745,8 +750,10 @@ strong{
 /* CTA SECTION */
 /**************************/
 
+/* top / right / bottom / left */
+
 .section-cta{
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta{
@@ -826,3 +833,83 @@ strong{
     
 }
 
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer{
+    padding: 12.8rem 0;
+    border-top: 2px solid #eee;
+}
+
+.grid--footer{
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.soical-links{
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.soical-icons{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright{
+    font-size: 1.4rem;
+    color: #767676;
+    line-height: 1.6;
+    margin-top: auto;
+}
+
+.contacts{
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address{
+    margin-bottom: 2.4rem;
+}
+
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    color: #555;
+
+}
+
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.5s;
+}
+
+.footer-link:hover,
+.footer-link:active{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #555;
+}
