@@ -49,6 +49,13 @@ Default : 9px
 }
 
 html{
+
+    /* font-size: 10px; */
+
+    /* 10px / 16px (which is the default browser font-size setting) = 0.0625 = 6.25 
+    therefore making 1Rem = 10px
+    Percentage of user's browser font-size setting */
+
     font-size:  62.5%;
 }
 
